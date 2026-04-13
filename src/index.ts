@@ -1,5 +1,5 @@
 import express,{type Request,type Response} from  'express';
-import dotenv from 'dotenv';
+import {} from './config/env.js';
 const app=express();
 const port=process.env.PORT;
 app.get("/",(req,res)=>{
