@@ -10,7 +10,7 @@ dotenv.config();
 export const db = mysql.createPool({
     host: "localhost",
     user: "root",
-    password: "",
+    password: "1258",
     database: "exam_system",
 });
 export const PORT = process.env.PORT ;
