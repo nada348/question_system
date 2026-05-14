@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exam System</title>
+</head>
+<body>
+
+    <h1>🚀 Exam System Running with EJS</h1>
+
+    <button onclick="load()">Load Exams</button>
+
+    <pre id="data"></pre>
+
+    <script>
+        async function load() {
+            const res = await fetch("/exams");
+            const data = await res.json();
+            document.getElementById("data").innerText =
+                JSON.stringify(data, null, 2);
+        }
+    </script>
+
+</body>
+</html>
